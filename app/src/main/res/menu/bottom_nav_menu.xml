@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/navigation_emergency"
+        android:icon="@drawable/ic_police_icon"
+        android:title="CCTV" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_user_profile"
+        android:title="Profile" />
+    </menu>

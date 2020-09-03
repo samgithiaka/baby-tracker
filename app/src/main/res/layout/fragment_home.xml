@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.main.fragments.HomeFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:orientation="horizontal">
+       <androidx.cardview.widget.CardView
+           android:id="@+id/cv_pick_n_drop_services"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="10dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginEnd="22dp"
+           android:layout_marginBottom="20dp"
+           android:clickable="true"
+           android:elevation="10dp"
+           android:focusable="true"
+           android:foreground="?android:attr/selectableItemBackground"
+           app:cardCornerRadius="12dp"
+           app:cardElevation="10dp">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="#F1F2F6"
+               android:orientation="vertical">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:padding="16dp">
+
+                   <ImageView
+                       android:id="@+id/iv_servicesn"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:contentDescription="icon"
+                       android:scaleType="fitStart"
+                       android:src="@drawable/ic_home" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:id="@+id/tv_Title1"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="15dp"
+                       android:text="Drop"
+                       android:textColor="#000"
+                       android:textSize="18sp"
+                       android:textStyle="bold" />
+
+                   <TextView
+                       android:id="@+id/tv_Description1"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="15dp"
+                       android:layout_marginEnd="33dp"
+                       android:layout_marginBottom="39dp"
+                       android:text="Click to drop your kid"
+                       android:textColor="#000"
+                       android:textSize="12sp" />
+               </LinearLayout>
+           </LinearLayout>
+
+       </androidx.cardview.widget.CardView>
+       <androidx.cardview.widget.CardView
+           android:id="@+id/cv_Payments"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="10dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginEnd="10dp"
+           android:layout_marginBottom="20dp"
+           android:clickable="true"
+           android:elevation="10dp"
+           android:focusable="true"
+           android:foreground="?android:attr/selectableItemBackground"
+           app:cardCornerRadius="12dp"
+           app:cardElevation="10dp">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="#F1F2F6"
+               android:orientation="vertical">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:padding="16dp">
+
+                   <ImageView
+                       android:id="@+id/iv_services_icon"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:contentDescription="icon"
+                       android:scaleType="fitStart"
+                       android:src="@drawable/ic_police_icon" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:id="@+id/tv_Title"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="15dp"
+                       android:text="Payments"
+                       android:textColor="#000"
+                       android:textSize="18sp"
+                       android:textStyle="bold" />
+
+                   <TextView
+                       android:id="@+id/tv_Description"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="15dp"
+                       android:layout_marginEnd="33dp"
+                       android:layout_marginBottom="39dp"
+                       android:text="Click to make Payments"
+                       android:textColor="#000"
+                       android:textSize="12sp" />
+               </LinearLayout>
+           </LinearLayout>
+
+       </androidx.cardview.widget.CardView>
+
+   </LinearLayout>
+
+</FrameLayout>
+</layout>
