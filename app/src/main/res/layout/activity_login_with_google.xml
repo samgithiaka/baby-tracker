@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.authentication.LoginWithGoogleActivity">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/btn_google"
+        style="@style/babyStyledStrokeButton"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/btn_stroke"
+        android:drawableStart="@drawable/ic_google_icon"
+        android:text="@string/continue_with_google"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="18sp">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat= "@drawable/ic_google_icon"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_marginStart="20dp"
+            android:text="@string/continue_with_google"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp" />
+    </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
