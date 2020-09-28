@@ -48,4 +48,10 @@ public class MainActivity extends BaseActivity {
         transaction.replace(R.id.frame_container, fragment);
         transaction.commit();
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        loadSelectedFragment(fragment != null ? fragment : new HomeFragment());
+    }
 }

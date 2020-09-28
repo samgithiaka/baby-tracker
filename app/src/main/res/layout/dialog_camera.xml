@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/btn_close"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="@dimen/sixteen_dp"
+            android:layout_marginBottom="@dimen/sixteen_dp"
+            android:layout_marginEnd="@dimen/sixteen_dp"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/ic_cancel_icon" />
+        <View
+            android:id="@+id/viewDivider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="13dp"
+            android:background="@color/button_grey"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/btn_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:text="Continue to camera"
+            android:layout_marginBottom="@dimen/sixteen_dp"
+            android:textSize="@dimen/eighteen_sp"
+            android:focusable="true"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/viewDivider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/sixteen_dp"
+            android:background="@color/button_grey" />
+        <TextView
+            android:id="@+id/btnGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_gravity="center_horizontal"
+            android:text="Upload from Gallery"
+            android:layout_marginBottom="@dimen/sixteen_dp"
+            android:textSize="@dimen/eighteen_sp"
+            android:focusable="true" />
+
+        <View
+            android:id="@+id/viewDivider4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="67dp"
+            android:background="@color/button_grey" />
+    </LinearLayout>
+</layout>
