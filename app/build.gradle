@@ -48,5 +48,5 @@ dependencies {
 
     //imageview
     implementation 'com.github.abdularis:circularimageview:1.4'
-
+    implementation 'com.bdhobare:mpesa:0.0.6'
 }

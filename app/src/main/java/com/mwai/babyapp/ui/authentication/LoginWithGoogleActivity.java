@@ -1,12 +1,11 @@
 package com.mwai.babyapp.ui.authentication;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
+
+import androidx.databinding.DataBindingUtil;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -130,6 +129,7 @@ public class LoginWithGoogleActivity extends BaseActivity {
                             Toast.makeText(activityContext, "Signed in as " +
                                     mFirebaseUser.getDisplayName(), Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(activityContext, MainActivity.class));
+                            finish();
                         } else {
                             // If sign in fails, display a message to the user.
                             //Constants.showToast(activityContext, "Authentication Failed. ");
